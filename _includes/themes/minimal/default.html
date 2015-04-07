@@ -22,7 +22,7 @@
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/main-min.css">
     <!-- Modernizr -->
-    <script src="{{ ASSET_PATH }}/js/vendor/modernizr.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/vendor/modernizr.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -103,15 +103,15 @@
     {% include JB/analytics %}
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/vendor/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="{{ ASSET_PATH }}/js/vendor/bootstrap.min.js"></script>
     {% if DOXYGEN_PATH %}
-    <script src="{{ DOXYGEN_PATH }}/dynsections.js"></script>
+    <script type="text/javascript" src="{{ DOXYGEN_PATH }}/dynsections.js"></script>
     {% endif %}
-    <script src="{{ ASSET_PATH }}/js/main.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/main.js"></script>
     {% for script in page.scripts %}
-    <script src="{{ ASSET_PATH }}{{ script }}"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}{{ script }}"></script>
     {% endfor %}
   </body>
 </html>
