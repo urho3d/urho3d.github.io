@@ -42,7 +42,13 @@ Building prerequisites</h2>
 <li>For Windows, the June 2010 DirectX SDK needs to be installed. This is not necessary if building on Visual Studio 2012 or newer, which install the Windows SDK with the necessary DirectX files.</li>
 </ul>
 <ul>
-<li>For Linux, the following development packages need to be installed: libx11-dev, libxrandr-dev, libasound2-dev on Debian-based distros; libX11-devel, libXrandr-devel, alsa-lib-devel on RedHat-based distros. Also install the package libgl1-mesa-dev (Debian) or mesa-libGL-devel (RH) if your GPU driver does not include OpenGL headers &amp; libs, but in most of the case it usually does and has better performance than Mesa's OpenGL implementation. Building as 32-bit on a 64-bit system requires installing also the 32-bit versions of the development libraries.</li>
+<li>For Linux, the following development packages need to be installed: 
+<ul>
+<li><strong>Debian:</strong> <code>libx11-dev libxrandr-dev libasound2-dev libgl1-mesa-dev</code></li>
+<li><strong>RedHat:</strong> <code>libX11-devel libXrandr-devel alsa-lib-devel mesa-libGL-devel</code></li>
+</ul>
+Packages <code>libgl1-mesa-dev</code> (Debian) or <code>mesa-libGL-devel</code> (RH) are needed when your GPU driver does not include OpenGL headers &amp; libs, but in most of the case it usually does and has better performance than Mesa's OpenGL implementation. Building as 32-bit on a 64-bit system requires installing also the 32-bit versions of the development libraries.
+</li>
 </ul>
 <ul>
 <li>For Raspberry Pi, the following development packages need to be installed. On Raspbian: libasound2-dev, libudev-dev. On Pidora: alsa-lib-devel, systemd-devel.</li>
